@@ -14,6 +14,14 @@ Two commands matter. Run them before you trust anything.
 the bridge is usable. If it prints `NOT READY`, fix the `FAIL` lines — do not
 guess, the message tells you exactly what to do.
 
+## The three commands
+
+```bash
+./scripts/bootstrap.sh               # 1. set up or repair — re-runnable, prints READY
+./scripts/verify_bridge.sh           # 2. prove it works — offline, mock provider, no key
+python3 scripts/ask.py ask "hello"   # 3. use it — add --quiet inside scripts
+```
+
 ---
 
 ## The bridge contract
